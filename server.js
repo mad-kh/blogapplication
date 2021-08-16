@@ -11,8 +11,6 @@ const multer = require("multer");
 const path = require("path");
 
 // dotenv.config();
-app.use(express.json());
-app.use("/images", express.static(path.join(__dirname, "/images")));
 
 const storage = multer.diskStorage({
     destination: (req, file, cb) => {
@@ -27,6 +25,8 @@ const upload = multer({ storage: storage });
 app.post("/api/upload", upload.single("file"), (req, res) => {
     res.status(200).json("File has been uploaded");
 });
+app.use(express.json());
+app.use("/images", express.static(path.join(__dirname, "/images")));
 
 app.use("/api/auth", authRoute);
 app.use("/api/users", userRoute);
