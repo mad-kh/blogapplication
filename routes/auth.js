@@ -40,7 +40,7 @@ router.post("/login", (req, res) => {
                         if (passwordMatch === true) {
                             jwt.sign(
                                 { user },
-                                "SECRET_KEY",
+                                "SECRETKEY",
 
                                 (err, token) => {
                                     if (err) throw err;
