@@ -9,8 +9,7 @@ const postRoute = require("./routes/posts");
 const categoryRoute = require("./routes/categories");
 const multer = require("multer");
 const path = require("path");
-const port = process.env.Port || 5000;
-const url = "mongodb://127.0.0.1:27017/Blogs";
+
 // dotenv.config();
 app.use(express.json());
 app.use("/images", express.static(path.join(__dirname, "/images")));
@@ -40,7 +39,9 @@ if (process.env.NODE_ENV === "production") {
     app.get("*", (req, res) => {
         res.sendFile(path.resolve(__dirname, "client/build/index.html"));
     });
-}
+};
+const port = process.env.Port || 5000;
+const url = "mongodb://127.0.0.1:27017/Blogs";
 app.listen(port, (err) => {
     if (err) throw err;
     console.log(`The DATABASE is connected on port ${port}`);
