@@ -1,0 +1,13 @@
+.posts {
+    flex: 9;
+    display: flex;
+    flex-wrap: wrap;
+    padding-right: 40px;
+
+    /* background: black; */
+    border-radius: 20px;
+}
+.posts > div:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}

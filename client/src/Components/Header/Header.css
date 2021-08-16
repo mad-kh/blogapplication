@@ -1,0 +1,62 @@
+.header {
+    margin-top: "60px";
+    height: 80%;
+}
+.imgStyle {
+    display: flex;
+    height: 700px;
+    background: cover;
+}
+.headerTitles {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "MonteCarlo", cursive;
+    /* color: rgb(231, 166, 166); */
+    color: black;
+}
+
+.headerTitleSm {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    top: 20%;
+    font-size: 3rem;
+    background: rgb(253, 243, 236);
+    margin: 100px;
+    width: 100%;
+}
+
+.headerTitleLg {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    top: 20%;
+    font-size: 6rem;
+    width: 100%;
+    margin: 200px;
+    background: rgb(230, 223, 223);
+}
+
+.headerPhrase {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    top: 40%;
+    font-size: 2rem;
+    width: 100%;
+    margin: 200px;
+    background: rgb(230, 223, 223);
+}
+.headerImg {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 700px;
+    margin-top: 0px;
+    object-fit: cover;
+}
+.headerImgs {
+    display: flex;
+    flex-direction: row;
+}

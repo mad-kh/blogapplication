@@ -1,0 +1,105 @@
+.navbar-logo {
+    justify-self: start;
+    margin-left: 18px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 0.5rem;
+    display: flex;
+    color: black;
+    align-items: center;
+}
+.top {
+    width: 100%;
+    height: 50px;
+    background-color: white;
+    /* background: #1fa2d6; */
+    /* color: burlywood; */
+    color: black;
+    text-shadow: none;
+    position: sticky;
+    top: 0;
+    display: flex;
+    align-items: center;
+    z-index: 999;
+    font-family: "Josefin Sans", sans-serif;
+}
+
+.topLeft,
+.topRight {
+    flex: 3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.topIcon {
+    font-size: 20px;
+    margin-right: 10px;
+    color: black;
+    cursor: pointer;
+    display: flex;
+}
+.topIcon:hover {
+    color: coral;
+}
+.topCenter {
+    flex: 6;
+    display: flex;
+}
+
+.topList {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.topListItem {
+    margin-right: 20px;
+    font-size: 1rem;
+    font-weight: 300;
+    cursor: pointer;
+    display: flex;
+    color: black;
+}
+
+.topListItem:hover {
+    color: coral;
+}
+
+.topImg {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 15px;
+    cursor: pointer;
+    display: flex;
+}
+
+.topSearchIcon {
+    font-size: 18px;
+    color: black;
+    cursor: pointer;
+    display: flex;
+}
+.topSearchIcon:hover {
+    color: tomato;
+}
+.link {
+    color: black;
+}
+.link:hover {
+    color: tomato;
+}
+.Link {
+    color: black;
+    margin-left: 20px;
+    font-size: 1.5rem;
+}
+.Link:hover {
+    color: tomato;
+}
+@media screen and (max-width: 768px) {
+}

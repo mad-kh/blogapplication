@@ -1,0 +1,67 @@
+.login {
+    height: calc(100vh - 50px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: url("https://raw.githubusercontent.com/JustFS/mern-project/e33bbb52a7d28ed7d7c69b0233938e38bfa80157/client/public/img/log.svg");
+    background-size: 100%;
+    background-color: black;
+}
+
+.loginTitle {
+    font-size: 50px;
+    color: lightcoral;
+}
+
+.loginForm {
+    margin-top: 20px;
+    color: black;
+    display: flex;
+    flex-direction: column;
+}
+
+.loginForm > label {
+    margin: 10px 0;
+}
+
+.loginInput {
+    padding: 10px;
+    background-color: white;
+    border: none;
+    border-radius: 10px;
+}
+
+.loginInput:focus {
+    outline: none;
+}
+
+.loginButton {
+    margin-top: 20px;
+    cursor: pointer;
+    background-color: lightslategray;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    text-align: center;
+}
+.loginButton:disabled {
+    cursor: not-allowed;
+    background-color: rgb(243, 178, 178);
+}
+.loginRegisterButton {
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    background-color: rgb(60, 241, 241);
+    cursor: pointer;
+    padding: 10px;
+    border: none;
+    color: white;
+    border-radius: 10px;
+}
+
+.Linkcolor {
+    color: white;
+}
