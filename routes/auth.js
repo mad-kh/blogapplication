@@ -3,7 +3,7 @@ const User = require("../models/User");
 const Post = require("../models/Post");
 const bcrypt = require("bcrypt");
 var jwt = require("jsonwebtoken");
-require("dotenv").config();
+// require("dotenv").config();
 const { extractToken } = require("../middlewares/user");
 
 //REGISTER
@@ -40,7 +40,7 @@ router.post("/login", (req, res) => {
                         if (passwordMatch === true) {
                             jwt.sign(
                                 { user },
-                                process.env.SECRETKEY,
+                                "SECRETKEY",
 
                                 (err, token) => {
                                     if (err) throw err;
